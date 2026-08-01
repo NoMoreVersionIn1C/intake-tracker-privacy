@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Intake Tracker Privacy Policy</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <header class="site-header"><nav class="language-nav" aria-label="Language selection"><a href="../ru/" lang="ru">Русский</a><a href="../en/" lang="en">English</a></nav></header>
+    <main>
+      <article>
+<h1>Intake Tracker Privacy Policy</h1>
+<p><strong>Effective date:</strong> 2026-08-01</p>
+<p><strong>Service provider:</strong> Andrey Parev</p>
+<p><strong>Contact:</strong> <a href="mailto:intaketracker.support@proton.me">intaketracker.support@proton.me</a></p>
+<p><a href="../ru/">Русский</a> · <a href="./">English</a></p>
+<nav class="toc" aria-label="Policy contents"><p class="toc-title">Contents</p><ul><li><a href="#controller">Who is responsible for the application</a></li><li><a href="#scope">Scope of this policy</a></li><li><a href="#local-data">Data processed locally</a></li><li><a href="#purposes">How the data is used</a></li><li><a href="#retention-controls">Retention and user controls</a></li><li><a href="#backup">Backups and transfer</a></li><li><a href="#watch-sync">Watch synchronization</a></li><li><a href="#advertising">Advertising</a></li><li><a href="#permissions">Permissions and system features</a></li><li><a href="#third-parties">Third-party providers</a></li><li><a href="#children">Children</a></li><li><a href="#rights">Your rights and choices</a></li><li><a href="#changes">Policy changes</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<h2 id="controller">Who is responsible for the application</h2>
+<p>The service provider identified above is responsible for Intake Tracker&#39;s data processing. This policy covers the Android application with package <code>com.recursivekatz.intaketracker</code> and the compatible watch application with package <code>com.recursivekatz.intaketracker.wear</code>.</p>
+<p>For privacy questions, contact <a href="mailto:intaketracker.support@proton.me">intaketracker.support@proton.me</a>.</p>
+<h2 id="scope">Scope of this policy</h2>
+<p>This policy describes processing by Intake Tracker on the phone and watch, manual backups, Android platform backup, synchronization through Huawei Health and Wear Engine, and advertising services. Third-party providers process data under their own notices, which are linked below.</p>
+<p>The current release has no Intake Tracker account, no developer-operated backend, no cloud synchronization of intake records, no first-party analytics upload, and no first-party crash-report upload. It performs no payment processing and has no contact, calendar, photo, or media access.</p>
+<h2 id="local-data">Data processed locally</h2>
+<p>The phone may locally store:</p>
+<ul><li>action name and category;</li><li>dosage and instructions;</li><li>schedule, weekdays, and Snooze options;</li><li>active and archived state;</li><li>Done, Snoozed, Skipped, and retracted response history;</li><li>technical reminder, backup, and watch-synchronization state.</li></ul>
+<p>The watch keeps a bounded local cache of nearby actions, one urgent reminder, unacknowledged responses, and technical synchronization cursors. This cache keeps nearby actions available while the phone is temporarily absent.</p>
+<h2 id="purposes">How the data is used</h2>
+<p>Local data is used to show schedules and history, deliver reminders, calculate Snooze and the next event, perform manual export and restore, and synchronize with a paired watch.</p>
+<p>Intake data is not sent to advertising providers. Application code does not give Petal Ads Prime or Yandex Mobile Ads SDK 8.2.0 action names, schedules, response history, backup contents, or Wear Engine messages.</p>
+<h2 id="retention-controls">Retention and user controls</h2>
+<p>Local records remain on the device until the user edits them, replaces them by restoring a backup, clears application data, or uninstalls the application. Archiving retains a record and marks it as archived. A supported response retraction leaves a technical record needed to reconcile history.</p>
+<p>The developer cannot remotely inspect or erase the local Intake Tracker database. Provider-side retention and deletion of advertising data are governed by the relevant provider&#39;s notice and procedures, not by Intake Tracker&#39;s local settings.</p>
+<h2 id="backup">Backups and transfer</h2>
+<p>Manual export writes a JSON document only to a location selected by the user. After export, the user controls its storage, copying, sharing, and deletion. Import validates a selected document and then replaces supported local actions and history with its contents.</p>
+<p>Android platform backup is currently enabled by the application configuration. Android and the backup transport selected on the device determine which private data is eligible, where it is transferred, how long it is retained, and how it is deleted. Those choices are controlled by the device settings and transport provider, not Intake Tracker. Manual export and Android backup are separate flows.</p>
+<h2 id="watch-sync">Watch synchronization</h2>
+<p>Huawei Health and Wear Engine carry a bounded set of schedules, reminders, and technical states to the paired watch. Responses and acknowledgements can travel back to the phone. The watch retains compact state intended for temporary use without the phone.</p>
+<p>Wear Engine is paired-device transport, not the developer&#39;s cloud backend. See the official <a href="https://developer.huawei.com/consumer/en/doc/development/connectivity-Guides/service-introduction-0000000000018585">Wear Engine overview</a>.</p>
+<h2 id="advertising">Advertising</h2>
+<p>The application may request non-personalized banner ads from Petal Ads Prime or Yandex Mobile Ads SDK 8.2.0. Advertising ID availability depends on Android and device settings. Intake Tracker does not read the Advertising ID directly, but an advertising SDK may receive it when the platform permits access.</p>
+<p>Advertising providers may process IP address, network and carrier information, device and application identifiers, technical characteristics, ad display and interaction events, timing and frequency, security information, and errors as described in their notices.</p>
+<p>The SIM country is read transiently only to order advertising-provider attempts. Intake Tracker does not persist the SIM value or attach it to an ad request in application code. It is not a precise-location measurement, and the application requests no Android location permission.</p>
+<h2 id="permissions">Permissions and system features</h2>
+<p>Notification permission allows reminders to be shown. Exact-alarm special access schedules reminders as close to the requested time as Android rules permit. Device boot, time, and time-zone events are used to restore local alarm registrations.</p>
+<p>Internet access is required by advertising SDKs and related network services. Some device and package capabilities are contributed by Huawei, Wear Engine, and advertising dependencies. A declared package capability does not prove that every related data type is collected on every run.</p>
+<h2 id="third-parties">Third-party providers</h2>
+<p>Third-party providers determine processing, retention, deletion, and rights procedures for data received by their services:</p>
+<ul><li><a href="https://developer.huawei.com/consumer/en/doc/distribution/monetize/release-0000001050961874">Huawei Petal Ads release and privacy guidance</a>;</li><li><a href="https://developer.huawei.com/consumer/en/doc/development/connectivity-Guides/service-introduction-0000000000018585">Huawei Wear Engine</a>;</li><li><a href="https://ads.yandex.com/helpcenter/en/dev/android/app-privacy-android">Yandex Mobile Ads Android data guidance</a>;</li><li><a href="https://yandex.com/legal/confidential/">Yandex Privacy Policy</a>;</li><li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li></ul>
+<p>This site is hosted on GitHub Pages. GitHub may process IP address and HTTP request metadata as the hosting provider. The policy site itself adds no application-owned analytics, advertisements, cookies, or third-party scripts.</p>
+<h2 id="children">Children</h2>
+<p>Intake Tracker is not directed to children under 13. A parent or guardian who believes a child provided information to an advertising provider may contact that provider and the privacy contact listed in this policy.</p>
+<h2 id="rights">Your rights and choices</h2>
+<p>Users can edit and archive actions, retract supported history entries, create and import backups, clear application data, or uninstall the application. Android settings provide controls for notifications, exact alarms, Advertising ID, and device backup.</p>
+<p>For data held by an advertising or platform provider, use the channels and settings identified in that provider&#39;s notice. The developer has no remote access to local records and cannot perform deletion on a third-party provider&#39;s servers on its behalf.</p>
+<h2 id="changes">Policy changes</h2>
+<p>If data processing changes materially, this policy and its effective date will be updated before or with the relevant application release. The current version is published at this address.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions about Intake Tracker&#39;s data handling and data-rights requests can be sent to <a href="mailto:intaketracker.support@proton.me">intaketracker.support@proton.me</a>. For data processed by a third-party provider, also use the provider&#39;s official channels listed under “Third-party providers.”</p>
+      </article>
+    </main>
+    <footer class="site-footer"><p>This site is hosted on GitHub Pages. GitHub may process HTTP request metadata as the hosting provider. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p></footer>
+  </body>
+</html>
