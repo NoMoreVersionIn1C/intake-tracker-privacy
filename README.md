@@ -7,3 +7,5 @@ Generated public privacy documentation for Intake Tracker.
 
 The published files are generated from reviewed source documents. Do not edit
 the generated HTML directly.
+
+- Download: https://nomoreversionin1c.github.io/intake-tracker-privacy/download/
