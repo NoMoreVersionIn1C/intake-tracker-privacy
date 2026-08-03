@@ -12,7 +12,7 @@
     <main>
       <article>
 <h1>Intake Tracker Privacy Policy</h1>
-<p><strong>Effective date:</strong> 2026-08-01</p>
+<p><strong>Effective date:</strong> 2026-08-04</p>
 <p><strong>Service provider:</strong> Andrey Parev</p>
 <p><strong>Contact:</strong> <a href="mailto:intaketracker.support@proton.me">intaketracker.support@proton.me</a></p>
 <p><a href="../ru/">Русский</a> · <a href="./">English</a></p>
@@ -35,12 +35,12 @@
 <p>The developer cannot remotely inspect or erase the local Intake Tracker database. Provider-side retention and deletion of advertising data are governed by the relevant provider&#39;s notice and procedures, not by Intake Tracker&#39;s local settings.</p>
 <h2 id="backup">Backups and transfer</h2>
 <p>Manual export writes a JSON document only to a location selected by the user. After export, the user controls its storage, copying, sharing, and deletion. Import validates a selected document and then replaces supported local actions and history with its contents.</p>
-<p>Android platform backup is currently enabled by the application configuration. Android and the backup transport selected on the device determine which private data is eligible, where it is transferred, how long it is retained, and how it is deleted. Those choices are controlled by the device settings and transport provider, not Intake Tracker. Manual export and Android backup are separate flows.</p>
+<p>Automatic Android platform backup and device transfer are disabled by the application configuration. The application rules exclude every supported private-data domain from cloud backup and device transfer. Manual JSON export and import occur only after an explicit user action.</p>
 <h2 id="watch-sync">Watch synchronization</h2>
 <p>Huawei Health and Wear Engine carry a bounded set of schedules, reminders, and technical states to the paired watch. Responses and acknowledgements can travel back to the phone. The watch retains compact state intended for temporary use without the phone.</p>
 <p>Wear Engine is paired-device transport, not the developer&#39;s cloud backend. See the official <a href="https://developer.huawei.com/consumer/en/doc/development/connectivity-Guides/service-introduction-0000000000018585">Wear Engine overview</a>.</p>
 <h2 id="advertising">Advertising</h2>
-<p>The application may request non-personalized banner ads from Petal Ads Prime or Yandex Mobile Ads SDK 8.2.0. Advertising ID availability depends on Android and device settings. Intake Tracker does not read the Advertising ID directly, but an advertising SDK may receive it when the platform permits access.</p>
+<p>Version 1.0.0 does not display advertising. Advertising ID availability remains subject to Android and device settings. In this release, Intake Tracker application code does not initialize Petal Ads Prime or Yandex Mobile Ads and does not issue an advertising request. Both SDKs remain packaged for possible activation in a future update; permissions and components contributed by a packaged SDK do not by themselves prove data collection or transfer.</p>
 <p>Advertising providers may process IP address, network and carrier information, device and application identifiers, technical characteristics, ad display and interaction events, timing and frequency, security information, and errors as described in their notices.</p>
 <p>The SIM country is read transiently only to order advertising-provider attempts. Intake Tracker does not persist the SIM value or attach it to an ad request in application code. It is not a precise-location measurement, and the application requests no Android location permission.</p>
 <h2 id="permissions">Permissions and system features</h2>
